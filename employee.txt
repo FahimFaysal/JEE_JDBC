@@ -1,0 +1,23 @@
+CREATE Table employee(
+empid VARCHAR2(6) CONSTRAINT emp_pk PRIMARY KEY,
+name VARCHAR2(20) NOT NULL,
+salary NUMBER(10) NOT NULL,
+phone VARCHAR2(15),
+email VARCHAR2(30) UNIQUE
+);
+
+
+INSERT INTO employee VALUES('emp01', 'Narayana Murthy', 99999999, '123456789', 'Murthy@infy.com');
+INSERT INTO employee VALUES('emp02', 'Raghavendra Narayana', 88888888, '25487986', 'Narayana@infy.com');
+INSERT INTO employee VALUES('emp03', 'Manoj Kumar', 77777777, '54147852', 'Kumar@infy.com');
+INSERT INTO employee VALUES('emp04', 'Sunayna TA',66666666, '69696969', 'Sunayna@infy.com');
+INSERT INTO employee VALUES('emp05', 'Nishu TA', 55555555, '24242424', 'Nishu@infy.com');
+INSERT INTO employee VALUES('emp06', 'Kirkal TA',55555555, '65656565', 'Kirkal@infy.com');
+INSERT INTO employee VALUES('emp07', 'Ismita TA', 55555555, '65656565', 'Ismita@infy.com');
+
+commit;
+
+
+
+
+SELECT * FROM employee;
